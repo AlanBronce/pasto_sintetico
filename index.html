@@ -1,1 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa de Pasto Sintético y Soluciones Deportivas</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- HEADER con navegación principal (Inicio, Productos, Proyectos, Nosotros, Contacto) -->
+    <header>
+        <div class="logo">
+            <a href="#">Logo</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto / Cotizar</a></li>
+            </ul>
+        </nav>
+        <!-- Teléfono y WhatsApp visible (opcional en header) -->
+        <div class="contacto-header">
+            <span>📞 +56 9 1234 5678</span>
+            <span>📱 +56 9 8765 4321 (WhatsApp)</span>
+        </div>
+    </header>
 
+    <main>
+        <!-- ========================================= -->
+        <!-- PÁGINA DE INICIO                           -->
+        <!-- ========================================= -->
+        <section id="inicio">
+            <!-- Hero principal -->
+            <div class="hero">
+                <h1>Soluciones integrales para espacios deportivos, residenciales y urbanos</h1>
+                <p>Pasto sintético, tartán, equipamiento y más</p>
+                <div class="botones-hero">
+                    <a href="#contacto" class="btn">Cotizar ahora</a>
+                    <a href="#productos" class="btn">Ver productos</a>
+                </div>
+            </div>
+
+            <!-- Nuestras Soluciones (agrupadas por categorías estratégicas) -->
+            <div class="soluciones">
+                <h2>Nuestras Soluciones</h2>
+                <ul>
+                    <li>Pasto Residencial</li>
+                    <li>Pasto Deportivo</li>
+                    <li>Tartán y Superficies</li>
+                    <li>Equipamiento Urbano</li>
+                    <li>Juegos y Ejercitadores</li>
+                </ul>
+            </div>
+
+            <!-- Productos Destacados -->
+            <div class="productos-destacados">
+                <h2>Productos Destacados</h2>
+                <div class="grid-destacados">
+                    <article>Trevi 40mm</article>
+                    <article>Monofilamento deportivo</article>
+                    <article>Pasto Pádel</article>
+                    <article>Tartán</article>
+                    <article>Follaje</article>
+                </div>
+            </div>
+
+            <!-- Beneficios / Diferenciadores -->
+            <div class="beneficios">
+                <h2>¿Por qué elegirnos?</h2>
+                <ul>
+                    <li>Venta directa</li>
+                    <li>Variedad de modelos</li>
+                    <li>Soluciones completas</li>
+                    <li>Atención personalizada</li>
+                    <li>Cobertura regional</li>
+                </ul>
+            </div>
+
+            <!-- Vista previa de Proyectos -->
+            <div class="proyectos-preview">
+                <h2>Proyectos recientes</h2>
+                <div class="preview-galeria">
+                    <figure>Proyecto 1</figure>
+                    <figure>Proyecto 2</figure>
+                    <figure>Proyecto 3</figure>
+                </div>
+                <a href="#proyectos">Ver todos los proyectos</a>
+            </div>
+
+            <!-- Llamado a la acción final con formulario corto y botón WhatsApp -->
+            <div class="cta-final">
+                <h2>¿Listo para comenzar tu proyecto?</h2>
+                <p>Solicita una cotización sin compromiso</p>
+                <!-- Formulario corto (opcional, puede ser solo botón) -->
+                <form action="#" method="post">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="tel" placeholder="Teléfono" required>
+                    <button type="submit" class="btn">Solicitar cotización</button>
+                </form>
+                <a href="https://wa.me/56987654321" class="btn-whatsapp">WhatsApp</a>
+            </div>
+        </section>
+
+        <!-- ========================================= -->
+        <!-- PÁGINA DE PRODUCTOS (CATÁLOGO)            -->
+        <!-- ========================================= -->
+        <section id="productos">
+            <h1>Catálogo de Productos</h1>
+
+            <!-- Categoría 1: Pasto Sintético Residencial -->
+            <div class="categoria">
+                <h2>Pasto Sintético Residencial</h2>
+                <ul>
+                    <li>7mm</li>
+                    <li>Terrace 25mm</li>
+                    <li>Costa 35mm</li>
+                    <li>Trevi 40mm</li>
+                </ul>
+            </div>
+
+            <!-- Categoría 2: Pasto Sintético Deportivo -->
+            <div class="categoria">
+                <h2>Pasto Sintético Deportivo</h2>
+                <ul>
+                    <li>Fibrilado</li>
+                    <li>Monofilamento</li>
+                    <li>Híbrido</li>
+                </ul>
+            </div>
+
+            <!-- Categoría 3: Especializados -->
+            <div class="categoria">
+                <h2>Especializados</h2>
+                <ul>
+                    <li>Pasto de colores</li>
+                    <li>Pasto Pádel</li>
+                    <li>Tartán para pistas</li>
+                </ul>
+            </div>
+
+            <!-- Categoría 4: Complementarios -->
+            <div class="categoria">
+                <h2>Complementarios</h2>
+                <ul>
+                    <li>Follaje artificial</li>
+                    <li>Ejercitadores al aire libre</li>
+                    <li>Juegos infantiles</li>
+                    <li>Pintura antiderrapante Sonoflex</li>
+                    <li>Duelas de caucho</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ========================================= -->
+        <!-- EJEMPLO DE PÁGINA INTERNA DE PRODUCTO     -->
+        <!-- ========================================= -->
+        <section id="detalle-producto">
+            <h1>Trevi 40mm</h1>
+            <div class="imagen-principal">
+                <img src="trevi40.jpg" alt="Trevi 40mm">
+            </div>
+            <p class="descripcion">Pasto sintético de alta densidad, ideal para jardines y terrazas.</p>
+            
+            <div class="especificaciones">
+                <h3>Especificaciones técnicas</h3>
+                <ul>
+                    <li><strong>Altura:</strong> 40 mm</li>
+                    <li><strong>Uso recomendado:</strong> Residencial, áreas de tránsito moderado</li>
+                    <li><strong>Tipo de fibra:</strong> Monofilamento</li>
+                    <li><strong>Aplicaciones:</strong> Jardines, piscinas, terrazas</li>
+                </ul>
+            </div>
+
+            <div class="beneficios-producto">
+                <h3>Beneficios</h3>
+                <ul>
+                    <li>Aspecto natural</li>
+                    <li>Alta durabilidad</li>
+                    <li>Drenaje eficiente</li>
+                </ul>
+            </div>
+
+            <div class="proyectos-relacionados">
+                <h3>Proyectos donde se ha usado</h3>
+                <p>Jardín Las Condes, Terraza Vitacura, etc.</p>
+            </div>
+
+            <a href="#contacto" class="btn">Cotizar este producto</a>
+        </section>
+
+        <!-- ========================================= -->
+        <!-- PÁGINA DE PROYECTOS                        -->
+        <!-- ========================================= -->
+        <section id="proyectos">
+            <h1>Proyectos realizados</h1>
+            <p>Filtros por tipo de proyecto:</p>
+            <ul class="filtros">
+                <li><a href="#">Canchas deportivas</a></li>
+                <li><a href="#">Residencial</a></li>
+                <li><a href="#">Áreas públicas</a></li>
+                <li><a href="#">Gimnasios</a></li>
+            </ul>
+            <div class="galeria-proyectos">
+                <!-- Cada proyecto con imagen y descripción -->
+                <figure>
+                    <img src="proyecto1.jpg" alt="Proyecto 1">
+                    <figcaption>Cancha de fútbol - Antes/Después</figcaption>
+                </figure>
+                <figure>
+                    <img src="proyecto2.jpg" alt="Proyecto 2">
+                    <figcaption>Jardín residencial - Antes/Después</figcaption>
+                </figure>
+                <figure>
+                    <img src="proyecto3.jpg" alt="Proyecto 3">
+                    <figcaption>Área pública con juegos</figcaption>
+                </figure>
+                <!-- Más figuras... -->
+            </div>
+        </section>
+
+        <!-- ========================================= -->
+        <!-- PÁGINA NOSOTROS                            -->
+        <!-- ========================================= -->
+        <section id="nosotros">
+            <h1>Sobre nosotros</h1>
+            <p>Experiencia, cobertura regional y compromiso con la calidad. Somos proveedores integrales de soluciones para espacios deportivos, recreativos y urbanos.</p>
+            <p>Nuestra historia: ... (breve reseña). Contamos con varias marcas operativas y una amplia trayectoria en el mercado.</p>
+            <p>Cobertura: Región Metropolitana, Valparaíso, Biobío, etc.</p>
+        </section>
+
+        <!-- ========================================= -->
+        <!-- PÁGINA DE CONTACTO / COTIZACIÓN           -->
+        <!-- ========================================= -->
+        <section id="contacto">
+            <h1>Contacto y Cotización</h1>
+            <form action="#" method="post">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="tipo-producto">Tipo de producto</label>
+                    <select id="tipo-producto" name="tipo-producto">
+                        <option value="">Selecciona...</option>
+                        <option value="residencial">Pasto residencial</option>
+                        <option value="deportivo">Pasto deportivo</option>
+                        <option value="colores">Pasto de colores</option>
+                        <option value="padel">Pasto pádel</option>
+                        <option value="tartan">Tartán</option>
+                        <option value="follaje">Follaje artificial</option>
+                        <option value="ejercitadores">Ejercitadores</option>
+                        <option value="juegos">Juegos infantiles</option>
+                        <option value="sonoflex">Pintura Sonoflex</option>
+                        <option value="duelas">Duelas de caucho</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="tipo-proyecto">Tipo de proyecto</label>
+                    <input type="text" id="tipo-proyecto" name="tipo-proyecto" placeholder="Ej: Cancha deportiva, jardín, área pública...">
+                </div>
+                <div>
+                    <label for="metros">Metros aproximados</label>
+                    <input type="number" id="metros" name="metros" min="1" placeholder="m²">
+                </div>
+                <div>
+                    <label for="comentarios">Comentarios</label>
+                    <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar cotización</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Empresa de Pasto Sintético - Todos los derechos reservados</p>
+        <p>Dirección: Calle Falsa 123, Santiago</p>
+        <p>Teléfono: +56 9 1234 5678 | WhatsApp: +56 9 8765 4321</p>
+    </footer>
+
+    <!-- BOTÓN WHATSAPP FLOTANTE (fijo en todo el sitio) -->
+    <div class="whatsapp-flotante">
+        <a href="https://wa.me/56987654321" target="_blank" title="Envíanos un WhatsApp">
+            <img src="whatsapp-icon.svg" alt="WhatsApp" width="50">
+        </a>
+    </div>
+</body>
+</html>
