@@ -10,7 +10,7 @@
     --color-gris-claro: #f5f5f5;
     --color-gris-medio: #e0e0e0;
     --color-gris-oscuro: #333333;
-    --color-acento: #2c3e50;      /* Azul grisáceo, puedes cambiarlo */
+    --color-acento: #2c3e50;
     --color-acento-hover: #1a252f;
     --color-borde: #cccccc;
     --fuente-titulos: 'Poppins', sans-serif;
@@ -114,7 +114,7 @@ nav a:hover {
     margin-left: 1rem;
 }
 
-/* ===== MAIN (contenido principal) ===== */
+/* ===== MAIN ===== */
 main {
     min-height: 60vh;
 }
@@ -223,23 +223,61 @@ section:last-of-type {
     background-color: #128C7E;
 }
 
-/* ===== LISTAS (soluciones, beneficios) ===== */
-.soluciones ul,
-.beneficios ul {
+/* ===== SOLUCIONES ===== */
+.soluciones ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
     justify-content: center;
     margin-top: 2rem;
+    padding: 0;
 }
 
-.soluciones li,
-.beneficios li {
-    background-color: var(--color-gris-claro);
-    padding: 0.75rem 1.5rem;
+.soluciones li {
+    position: relative;
+    width: 250px;          /* Ajusta el ancho según tu diseño */
+    height: 200px;         /* Ajusta el alto según tu diseño */
+    overflow: hidden;
     border: 1px solid var(--color-gris-medio);
-    font-weight: 500;
+}
+
+.soluciones li img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;     /* La imagen cubre todo el espacio sin deformarse */
+    z-index: 1;
+}
+
+/* Overlay */
+.soluciones li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Opacidad */
+    z-index: 2;
+    pointer-events: none;
+}
+
+.soluciones li span {
+    position: relative;
+    z-index: 3;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    padding: 1rem;
 }
 
 /* ===== PRODUCTOS DESTACADOS ===== */
@@ -256,6 +294,23 @@ section:last-of-type {
     padding: 2rem 1rem;
     text-align: center;
     font-weight: 600;
+}
+
+/* ===== BENEFICIOS (sin imágenes, como antes) ===== */
+.beneficios ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.beneficios li {
+    background-color: var(--color-gris-claro);
+    padding: 0.75rem 1.5rem;
+    border: 1px solid var(--color-gris-medio);
+    font-weight: 500;
 }
 
 /* ===== PREVIEW PROYECTOS ===== */
