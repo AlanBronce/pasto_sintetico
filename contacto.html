@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto y Cotización</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">Logo</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="index.html#nosotros">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto / Cotizar</a></li>
+            </ul>
+        </nav>
+        <div class="contacto-header">
+            <span>📞 +56 9 1234 5678</span>
+            <span>📱 +56 9 8765 4321 (WhatsApp)</span>
+        </div>
+    </header>
+
+    <main>
+        <section id="contacto">
+            <h1>Contacto y Cotización</h1>
+            <form action="#" method="post">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="tipo-producto">Tipo de producto</label>
+                    <select id="tipo-producto" name="tipo-producto">
+                        <option value="">Selecciona...</option>
+                        <option value="residencial">Pasto residencial</option>
+                        <option value="deportivo">Pasto deportivo</option>
+                        <option value="colores">Pasto de colores</option>
+                        <option value="padel">Pasto pádel</option>
+                        <option value="tartan">Tartán</option>
+                        <option value="follaje">Follaje artificial</option>
+                        <option value="ejercitadores">Ejercitadores</option>
+                        <option value="juegos">Juegos infantiles</option>
+                        <option value="sonoflex">Pintura Sonoflex</option>
+                        <option value="duelas">Duelas de caucho</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="tipo-proyecto">Tipo de proyecto</label>
+                    <input type="text" id="tipo-proyecto" name="tipo-proyecto" placeholder="Ej: Cancha deportiva, jardín, área pública...">
+                </div>
+                <div>
+                    <label for="metros">Metros aproximados</label>
+                    <input type="number" id="metros" name="metros" min="1" placeholder="m²">
+                </div>
+                <div>
+                    <label for="comentarios">Comentarios</label>
+                    <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar cotización</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Empresa de Pasto Sintético - Todos los derechos reservados</p>
+        <p>Dirección: Calle Falsa 123, Santiago</p>
+        <p>Teléfono: +56 9 1234 5678 | WhatsApp: +56 9 8765 4321</p>
+    </footer>
+
+    <div class="whatsapp-flotante">
+        <a href="https://wa.me/56987654321" target="_blank" title="Envíanos un WhatsApp">
+            <img src="images/whatsapp-icon.svg" alt="WhatsApp" width="50">
+        </a>
+    </div>
+</body>
+</html>

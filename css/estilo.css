@@ -223,63 +223,6 @@ section:last-of-type {
     background-color: #128C7E;
 }
 
-/* ===== SOLUCIONES ===== */
-.soluciones ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    justify-content: center;
-    margin-top: 2rem;
-    padding: 0;
-}
-
-.soluciones li {
-    position: relative;
-    width: 250px;          /* Ajusta el ancho según tu diseño */
-    height: 200px;         /* Ajusta el alto según tu diseño */
-    overflow: hidden;
-    border: 1px solid var(--color-gris-medio);
-}
-
-.soluciones li img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;     /* La imagen cubre todo el espacio sin deformarse */
-    z-index: 1;
-}
-
-/* Overlay */
-.soluciones li::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Opacidad */
-    z-index: 2;
-    pointer-events: none;
-}
-
-.soluciones li span {
-    position: relative;
-    z-index: 3;
-    color: white;
-    font-weight: 600;
-    font-size: 1.2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    text-align: center;
-    padding: 1rem;
-}
-
 /* ===== PRODUCTOS DESTACADOS ===== */
 .productos-destacados .grid-destacados {
     display: grid;
