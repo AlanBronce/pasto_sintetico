@@ -137,52 +137,37 @@ section:last-of-type {
     width: 100%;
     height: 100vh;
     min-height: 600px;
-    overflow: hidden;
+    background-image: url('../images/hero-background.jpg'); /* Ruta relativa desde css/ */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.hero-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-    color: white;
-    text-align: center;
-    top: 50%;
-    transform: translateY(-50%);
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-}
-
-
-.hero::after {
+/* Overlay oscuro para mejorar la legibilidad del texto */
+.hero::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad si lo deseas */
     z-index: 1;
-    pointer-events: none;
+    pointer-events: none; /* Para que no interfiera con clics en los botones */
 }
 
-.hero-img {
-    z-index: 1;
-}
-.hero::after {
-    z-index: 2; /* Overlay por encima de la imagen */
-}
 .hero-content {
-    z-index: 3; /* Texto por encima del overlay */
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    padding: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero h1 {
@@ -192,8 +177,13 @@ section:last-of-type {
 
 .hero p {
     font-size: 1.25rem;
-    color: var(--color-gris-claro);
     margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        background-attachment: scroll;
+    }
 }
 
 /* ===== BOTONES ===== */
@@ -246,7 +236,7 @@ section:last-of-type {
 .video-container {
     position: relative;
     width: 100%;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 2rem auto 0;
     border-radius: 12px;
     overflow: hidden;
