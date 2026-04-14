@@ -29,8 +29,8 @@
     </header>
 
     <main>
-        <!-- INICIO -->
-        <section id="inicio">
+        <!-- HERO (sin bordes blancos) -->
+        <section id="inicio" class="hero-section">
             <div class="hero">
                 <div class="hero-content">
                     <h1>Soluciones integrales para espacios deportivos, residenciales y urbanos</h1>
@@ -41,92 +41,139 @@
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- Productos Destacados -->
-           <div class="productos-destacados">
-    <h2>Productos Destacados</h2>
-    <div class="grid-destacados">
-        <a href="productos/trevi-40mm.html" class="producto-card" style="background-image: url('images/productos/thumbnails/trevi-40mm-thumb.jpg');">
-            <span>Trevi 40mm</span>
-        </a>
-        <a href="productos/monofilamento.html" class="producto-card" style="background-image: url('images/productos/thumbnails/monofilamento-thumb.jpg');">
-            <span>Monofilamento deportivo</span>
-        </a>
-        <a href="productos/pasto-padel.html" class="producto-card" style="background-image: url('images/productos/thumbnails/pasto-padel-thumb.jpg');">
-            <span>Pasto Pádel</span>
-        </a>
-        <a href="productos/tartan.html" class="producto-card" style="background-image: url('images/productos/thumbnails/tartan-thumb.jpg');">
-            <span>Tartán</span>
-        </a>
-        <a href="productos/follaje.html" class="producto-card" style="background-image: url('images/productos/thumbnails/follaje-thumb.jpg');">
-            <span>Follaje</span>
-        </a>
-    </div>
-</div>
-
-            <!-- Por qué elegirnos -->
-            <br><div class="beneficios">
-              <h2>Conoce por qué elegirnos</h2>
-                <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4OcuNTgk5do?si=YgiwDuDYzmRy2Urp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- PRODUCTOS DESTACADOS -->
+        <section class="productos-destacados">
+            <div class="container">
+                <h2>Productos Destacados</h2>
+                <div class="grid-destacados">
+                    <a href="productos/trevi-40mm.html" class="producto-card">
+                        <div class="card-image" style="background-image: url('images/productos/thumbnails/trevi-40mm-thumb.jpg');"></div>
+                        <div class="card-content">
+                            <h3>Trevi 40mm</h3>
+                            <p>Pasto sintético de alta densidad</p>
+                            <span class="btn-card">Ver más →</span>
+                        </div>
+                    </a>
+                    <a href="productos/monofilamento.html" class="producto-card">
+                        <div class="card-image" style="background-image: url('images/productos/thumbnails/monofilamento-thumb.jpg');"></div>
+                        <div class="card-content">
+                            <h3>Monofilamento deportivo</h3>
+                            <p>Ideal para canchas de alto rendimiento</p>
+                            <span class="btn-card">Ver más →</span>
+                        </div>
+                    </a>
+                    <a href="productos/pasto-padel.html" class="producto-card">
+                        <div class="card-image" style="background-image: url('images/productos/thumbnails/pasto-padel-thumb.jpg');"></div>
+                        <div class="card-content">
+                            <h3>Pasto Pádel</h3>
+                            <p>Especial para pistas de pádel</p>
+                            <span class="btn-card">Ver más →</span>
+                        </div>
+                    </a>
+                    <a href="productos/tartan.html" class="producto-card">
+                        <div class="card-image" style="background-image: url('images/productos/thumbnails/tartan-thumb.jpg');"></div>
+                        <div class="card-content">
+                            <h3>Tartán</h3>
+                            <p>Superficie para atletismo</p>
+                            <span class="btn-card">Ver más →</span>
+                        </div>
+                    </a>
+                    <a href="productos/follaje.html" class="producto-card">
+                        <div class="card-image" style="background-image: url('images/productos/thumbnails/follaje-thumb.jpg');"></div>
+                        <div class="card-content">
+                            <h3>Follaje artificial</h3>
+                            <p>Decoración y muros verdes</p>
+                            <span class="btn-card">Ver más →</span>
+                        </div>
+                    </a>
                 </div>
             </div>
+        </section>
 
-            <!-- Proyectos Recientes -->
-            <br><div class="proyectos-preview">
+        <!-- VIDEO BENEFICIOS -->
+        <section class="beneficios">
+            <div class="container">
+                <h2>Conoce por qué elegirnos</h2>
+                <div class="video-card">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/4OcuNTgk5do?autoplay=1&mute=1&loop=1&playlist=4OcuNTgk5do" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-caption">
+                        <p>Calidad, experiencia y compromiso en cada proyecto.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROYECTOS RECIENTES -->
+        <section class="proyectos-preview">
+            <div class="container">
                 <h2>Proyectos recientes</h2>
                 <div class="preview-galeria">
                     <figure>
                         <a href="proyectos/proyecto-cancha-futbol.html">
-                            <img src="images/Proyectos/proyecto1.jpeg" alt="Proyecto 1">
+                            <img src="images/Proyectos/proyecto1.jpeg" alt="Cancha de fútbol">
                         </a>
-                        <figcaption><a href="proyectos/proyecto-cancha-futbol.html">Cancha de fútbol</a></figcaption>
+                        <figcaption>
+                            <a href="proyectos/proyecto-cancha-futbol.html">Cancha de fútbol</a>
+                        </figcaption>
                     </figure>
                     <figure>
                         <a href="proyectos/proyecto-jardin-residencial.html">
-                            <img src="images/Proyectos/proyecto2.jpeg" alt="Proyecto 2">
+                            <img src="images/Proyectos/proyecto2.jpeg" alt="Jardín residencial">
                         </a>
-                        <figcaption><a href="proyectos/proyecto-jardin-residencial.html">Jardín residencial</a></figcaption>
+                        <figcaption>
+                            <a href="proyectos/proyecto-jardin-residencial.html">Jardín residencial</a>
+                        </figcaption>
                     </figure>
                     <figure>
                         <a href="proyectos/proyecto-area-publica.html">
-                            <img src="images/Proyectos/proyecto3.jpeg" alt="Proyecto 3">
+                            <img src="images/Proyectos/proyecto3.jpeg" alt="Área pública">
                         </a>
-                        <figcaption><a href="proyectos/proyecto-area-publica.html">Área pública</a></figcaption>
+                        <figcaption>
+                            <a href="proyectos/proyecto-area-publica.html">Área pública</a>
+                        </figcaption>
                     </figure>
                 </div>
-                <a href="proyectos.html">Ver todos los proyectos</a>
+                <a href="proyectos.html" class="btn-link">Ver todos los proyectos →</a>
             </div>
+        </section>
 
-            <!-- Formulario corto y botón WhatsApp -->
-        <br><div class="cta-final">
+        <!-- CTA FINAL -->
+        <section class="cta-final">
+            <div class="container">
                 <h2>¿Listo para comenzar tu proyecto?</h2>
                 <a href="contacto.html" class="btn">Solicitar cotización</a>
                 <a href="https://wa.me/56987654321" class="btn-whatsapp" target="_blank">WhatsApp</a>
             </div>
         </section>
 
-        <!-- Nosotros -->
-        <section id="nosotros">
-            <h1>Sobre nosotros</h1>
-            <p>Experiencia, cobertura regional y compromiso con la calidad. Somos proveedores integrales de soluciones para espacios deportivos, recreativos y urbanos.</p>
-            <p>Nuestra historia: ... (breve reseña). Contamos con varias marcas operativas y una amplia trayectoria en el mercado.</p>
-            <p>Cobertura: Región Metropolitana, Valparaíso, Biobío, etc.</p>
+        <!-- NOSOTROS -->
+        <section id="nosotros" class="nosotros">
+            <div class="container">
+                <h2>Sobre nosotros</h2>
+                <p>Experiencia, cobertura regional y compromiso con la calidad. Somos proveedores integrales de soluciones para espacios deportivos, recreativos y urbanos.</p>
+                <p>Nuestra historia: ... (breve reseña). Contamos con varias marcas operativas y una amplia trayectoria en el mercado.</p>
+                <p>Cobertura: Región Metropolitana, Valparaíso, Biobío, etc.</p>
+            </div>
         </section>
     </main>
 
-    <!-- FOOTER -->
     <footer>
         <p>&copy; Sport Tuxtla - Todos los derechos reservados</p>
-        <p>Dirección: Calle Falsa 123, Santiago</p>
+        <p>Dirección: Calle Falsa 123, Tuxtla Gutiérrez, Chiapas.</p>
         <p>Teléfono: +56 9 1234 5678 | WhatsApp: +56 9 8765 4321</p>
     </footer>
 
-    <!-- BOTÓN WHATSAPP FLOTANTE -->
     <div class="whatsapp-flotante">
         <a href="https://wa.me/56987654321" target="_blank" title="Envíanos un WhatsApp">
             <img src="images/whatsapp-icon.svg" alt="WhatsApp" width="50">
         </a>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/animations.js"></script>
 </body>
 </html>
