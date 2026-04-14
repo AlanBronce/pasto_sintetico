@@ -117,7 +117,7 @@ section {
     padding: 0 2rem;
 }
 
-/* HERO (sin bordes blancos) */
+/* HERO */
 .hero-section {
     padding: 0 !important;
     margin: 0;
@@ -156,6 +156,12 @@ section {
     max-width: 800px;
     padding: 2rem;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-logo {
+    width: 300px;
+    margin: 0 auto 1.5rem auto;  /* auto centra horizontalmente, 1.5rem abajo */
+    display: block;
 }
 
 .hero h1 {
