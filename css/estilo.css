@@ -216,7 +216,7 @@ h2 {
     text-align: center;
 }
 
-/* PRODUCTOS DESTACADOS */
+/* PRODUCTOS DESTACADOS (index) */
 .grid-destacados {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -257,20 +257,20 @@ h2 {
 }
 
 .card-content h3 {
-    font-size: 1rem;          /* Ajustado para igualar tamaño de proyectos */
+    font-size: 1rem;
     margin-bottom: 0.5rem;
     color: var(--color-texto);
 }
 
 .card-content p {
-    font-size: 0.85rem;       /* Ajustado para igualar tamaño de proyectos */
+    font-size: 0.85rem;
     color: var(--color-gris-oscuro);
     margin-bottom: 1rem;
 }
 
 .btn-card {
     display: inline-block;
-    font-size: 0.75rem;       /* Ajustado */
+    font-size: 0.75rem;
     font-weight: 600;
     color: var(--color-acento);
     border-bottom: 1px solid currentColor;
@@ -322,7 +322,7 @@ h2 {
     margin: 0;
 }
 
-/* PROYECTOS RECIENTES */
+/* PROYECTOS RECIENTES (index) */
 .preview-galeria {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -360,7 +360,7 @@ h2 {
     background: white;
     text-align: left;
     font-weight: 600;
-    font-size: 0.9rem;      /* Aseguramos tamaño similar */
+    font-size: 0.9rem;
 }
 
 .proyectos-preview figcaption a {
@@ -430,7 +430,25 @@ footer p {
     filter: brightness(0) invert(1);
 }
 
-/* PÁGINAS INTERNAS (productos.html, proyectos.html) */
+/* PÁGINA DE PRODUCTOS (nuevo diseño tipo proyectos) */
+.page-header {
+    text-align: center;
+    padding: 3rem 0 1rem;
+    background-color: var(--color-gris-claro);
+    margin-bottom: 1rem;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.page-header p {
+    color: var(--color-gris-oscuro);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
 .categoria {
     margin-bottom: 3rem;
 }
@@ -444,10 +462,80 @@ footer p {
 
 .grid-productos {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
 }
 
+.grid-productos .producto-card {
+    background: #fff;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px -10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-productos .producto-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px -12px rgba(0,0,0,0.2);
+}
+
+.grid-productos .producto-card a {
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+
+.producto-imagen {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+}
+
+.producto-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.grid-productos .producto-card:hover .producto-imagen img {
+    transform: scale(1.05);
+}
+
+.producto-info {
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.producto-info h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-texto);
+}
+
+.producto-info p {
+    font-size: 0.9rem;
+    color: var(--color-gris-oscuro);
+    margin-bottom: 1rem;
+}
+
+.producto-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: var(--color-acento);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 0.25rem 0.75rem;
+    border-radius: 30px;
+    z-index: 2;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* PROYECTOS (página proyectos.html) */
 .galeria-proyectos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -524,7 +612,7 @@ button[type="submit"]:hover {
     background-color: var(--color-acento-hover);
 }
 
-/* ===== RESPONSIVE ===== */
+/* RESPONSIVE */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -561,20 +649,15 @@ button[type="submit"]:hover {
     .hero-logo {
         width: 180px;
     }
-    /* Ajustes para tarjetas de productos destacados en móvil */
     .grid-destacados {
         gap: 1rem;
-    }
-    .producto-card {
-        height: auto;
-        min-height: auto;
     }
     .card-content {
         padding: 1rem;
         text-align: center;
     }
     .card-content h3 {
-        font-size: 0.9rem;    /* Ajuste para móvil */
+        font-size: 0.9rem;
     }
     .card-content p {
         font-size: 0.75rem;
@@ -582,7 +665,6 @@ button[type="submit"]:hover {
     .btn-card {
         font-size: 0.7rem;
     }
-    /* Ajustes para proyectos recientes en móvil */
     .preview-galeria {
         gap: 1rem;
     }
@@ -590,19 +672,25 @@ button[type="submit"]:hover {
         text-align: center;
         font-size: 0.8rem;
     }
-    /* Ajustes para catálogo de productos (página productos.html) */
     .grid-productos {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
         gap: 1rem;
     }
     .categoria h2 {
         font-size: 1.4rem;
     }
-    /* Ajustes para galería de proyectos interna */
+    .producto-info {
+        padding: 1rem;
+    }
+    .producto-info h3 {
+        font-size: 1rem;
+    }
+    .producto-info p {
+        font-size: 0.8rem;
+    }
     .galeria-proyectos {
         gap: 1rem;
     }
-    /* Ajustes para video card */
     .video-caption p {
         font-size: 0.9rem;
     }
